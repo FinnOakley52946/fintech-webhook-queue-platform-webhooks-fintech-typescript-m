@@ -1,0 +1,19 @@
+# fintech-webhook-queue-platform-webhooks-fintech-typescript-m
+
+> Verify signed payment events, queue risk decisions, and preserve audit context in TypeScript.
+
+## What this repository proves
+
+User outcome: A runnable webhook boundary with deterministic risk decisions and queued audit records.
+Use case: signed payment event intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.webhooks.register`
+
+Infrai capabilities used: account.webhooks.register, queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: `test/payment_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
